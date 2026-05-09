@@ -48,6 +48,10 @@ temp/
 *.tif
 *.tiff
 
+# Tracked documentation examples
+!content-creators/creator-example/assets/
+!content-creators/creator-example/assets/maya-vale-reference-contact-sheet.png
+
 # Large creative/project exports
 *.zip
 *.tar
