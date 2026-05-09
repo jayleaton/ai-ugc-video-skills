@@ -17,18 +17,14 @@ This repo is intentionally documentation-first. It does not commit generated cre
 3. Add your own creator references, product images, and generated videos locally. They are ignored by git.
 4. Have your AI generate the skill files for you based on `/skills`. I like to use these as global skills with assets in each project.
 
-Example prompt:
-
-```text
-Use the files in /skills to create global UGC video skills for my AI environment. Keep generated assets inside each project instead of committing them to this repo.
-```
-
 ## Recommended Workflow
 
-1. Use `ugc-script-writing` to choose a viral hook, write the voiceover, and split the ad into chunks.
-2. Use `ai-ugc-video-pipeline` to package the creator lock, universal direction block, scene prompts, and review plan.
-3. Use `fal-seedance-video` to generate each chunk separately at `9:16`, `720p`.
-4. Review clips one by one, regenerate weak scenes only, then assemble in your editor.
+1. Create an AI UGC creator or content creator package. Define the creator's backstory, personality, voice, visual identity, wardrobe, environments, and reference asset prompts.
+2. Store creator notes in `content-creators/`, while keeping generated images and videos local to your active project.
+3. Use `ugc-script-writing` to choose a viral hook, write the voiceover, and split the ad into chunks.
+4. Use `ai-ugc-video-pipeline` to package the creator lock, universal direction block, scene prompts, and review plan.
+5. Use `fal-seedance-video` to generate each chunk separately at `9:16`, `720p`.
+6. Review clips one by one, regenerate weak scenes only, then assemble in your editor.
 
 ## Repository Policy
 
