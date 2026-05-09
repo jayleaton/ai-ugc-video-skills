@@ -15,14 +15,12 @@ This repo is intentionally documentation-first. It does not commit generated cre
 1. Clone the repo.
 2. Copy `.env.example` to `.env` if you want to run fal.ai generation locally.
 3. Add your own creator references, product images, and generated videos locally. They are ignored by git.
-4. Copy any skill folder into your Codex skills directory, usually `~/.codex/skills`.
+4. Have your AI generate the skill files for you based on `/skills`. I like to use these as global skills with assets in each project.
 
-Example:
+Example prompt:
 
-```bash
-cp -R skills/ugc-script-writing ~/.codex/skills/
-cp -R skills/ai-ugc-video-pipeline ~/.codex/skills/
-cp -R skills/fal-seedance-video ~/.codex/skills/
+```text
+Use the files in /skills to create global UGC video skills for my AI environment. Keep generated assets inside each project instead of committing them to this repo.
 ```
 
 ## Recommended Workflow
