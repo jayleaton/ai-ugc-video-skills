@@ -10,6 +10,10 @@ This repo is intentionally documentation-first. It does not commit generated cre
 - [`ugc-script-writing`](skills/ugc-script-writing/README.md): script frameworks, viral hooks, chunking rules, captions, and review checks.
 - [`fal-seedance-video`](skills/fal-seedance-video/README.md): fal.ai Seedance defaults, payload guidance, local helper script, and generation failure handling.
 
+## Tools
+
+- [`verified-hooks.md`](tools/verified-hooks.md): 100 hook templates for UGC scripts, short-form ads, and organic social concepts.
+
 ## Fresh Clone Setup
 
 1. Clone the repo.

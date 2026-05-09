@@ -1,8 +1,6 @@
-# Viral Hook Library
+# Verified Hook Library
 
-This skill reference mirrors the canonical tool file at [`../../../tools/verified-hooks.md`](../../../tools/verified-hooks.md).
-
-Use at least one of these hooks for every UGC script. Adapt the blank to the product, problem, category, or viewer goal. Name the selected hook template in the output so downstream video prompts can preserve the angle.
+Use at least one of these hooks for every UGC script. Adapt the blank to the product, problem, category, or viewer goal. Name the selected hook template in script outputs so downstream video prompts can preserve the angle.
 
 ## Hooks
 
