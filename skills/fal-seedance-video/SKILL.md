@@ -1,13 +1,13 @@
 ---
 name: fal-seedance-video
-description: Implement and operate Seedance video generation through fal.ai. Use when generating or coding TikTok/Reels/Shorts videos with fal Seedance, choosing Seedance endpoints, setting aspect ratio/resolution/duration, uploading image references, submitting queue jobs, polling results, handling webhooks, or producing fal request payloads for AI UGC scene clips.
+description: Implement and operate fal.ai video generation for AI UGC clips, with Seedance as the quality baseline and cheaper provider tests such as Kling O3 Standard. Use when generating or coding TikTok/Reels/Shorts videos with fal video models, choosing endpoints, setting aspect ratio/resolution/duration, uploading image references, submitting queue jobs, polling results, handling webhooks, or producing fal request payloads for AI UGC scene clips.
 ---
 
-# fal Seedance Video
+# fal Video Generation
 
-Use this skill when Codex needs to generate or implement video clips with fal.ai Seedance.
+Use this skill when Codex needs to generate or implement video clips with fal.ai video models. Seedance remains the quality baseline, but cheaper candidates should be tested for iteration workflows.
 
-Read `references/fal-seedance.md` when you need exact endpoint IDs, current parameters, payload examples, or cost/resolution guidance.
+Read `references/fal-seedance.md` when you need Seedance endpoint IDs, parameters, payload examples, or cost/resolution guidance. Read `references/fal-video-providers.md` when comparing Seedance against cheaper fal providers.
 
 ## Defaults for UGC ads
 
@@ -18,11 +18,19 @@ Read `references/fal-seedance.md` when you need exact endpoint IDs, current para
 - Safety checker: leave enabled.
 - Camera: keep subtle and realistic; avoid aggressive cinematic movement for talking-head UGC.
 
+## Provider candidates
+
+- Quality baseline: `bytedance/seedance-2.0/image-to-video`
+- Cheaper first test: `fal-ai/kling-video/o3/standard/image-to-video`
+- Low-cost visual-only exploration: `fal-ai/minimax/video-01/image-to-video`
+
 ## Workflow
 
 1. Confirm an API key is available before running generation. For AutoVisuals UGC work, use `UGC_FAL_API_KEY` so creator/ad generation does not share app provider keys. For general projects, `FAL_KEY` or `FAL_API_KEY` are also supported.
 2. Choose endpoint:
    - `bytedance/seedance-2.0/image-to-video` for UGC clips from persona/reference images with generated synchronized audio.
+   - `fal-ai/kling-video/o3/standard/image-to-video` for lower-cost image-to-video UGC tests with optional generated audio.
+   - `fal-ai/minimax/video-01/image-to-video` for cheap visual motion tests where native dialogue is not the focus.
    - `fal-ai/bytedance/seedance/v1/pro/fast/image-to-video` for older visual-only or legacy workflows.
    - `fal-ai/bytedance/seedance/v1/lite/image-to-video` for cheaper fast prototypes.
    - Text-to-video only when no reference image is required.
@@ -34,20 +42,18 @@ Read `references/fal-seedance.md` when you need exact endpoint IDs, current para
 
 ## Local helper
 
-Use `scripts/generate_seedance_clip.mjs` for one-off local clip generation when the current project has `@fal-ai/client` available or can install it.
+Use `scripts/generate_fal_video_clip.mjs` for one-off local clip generation when the current project has `@fal-ai/client` available or can install it.
 
 Example:
 
 ```bash
-UGC_FAL_API_KEY=... node /Users/jjeaton/.codex/skills/fal-seedance-video/scripts/generate_seedance_clip.mjs \
-  --endpoint bytedance/seedance-2.0/image-to-video \
+UGC_FAL_API_KEY=... node /Users/jjeaton/.codex/skills/fal-seedance-video/scripts/generate_fal_video_clip.mjs \
+  --provider kling-o3-standard \
   --prompt-file /path/to/chunk-01-prompt.txt \
   --image /path/to/marc-reference.png \
-  --aspect-ratio 9:16 \
-  --resolution 720p \
   --duration 6 \
   --generate-audio true \
-  --out-json /path/to/chunk-01-result.json
+  --out-json /path/to/chunk-01-kling-result.json
 ```
 
 If a project should own this permanently, copy the helper into the project and add `@fal-ai/client` as a project dependency rather than relying on the global skill path.
