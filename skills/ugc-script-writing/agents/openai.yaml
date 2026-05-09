@@ -1,0 +1,4 @@
+interface:
+  display_name: "UGC Script Writing"
+  short_description: "Production-ready UGC ad scripts"
+  default_prompt: "Create a UGC script using the UGC Script Writing skill."

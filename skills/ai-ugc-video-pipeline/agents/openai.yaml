@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI UGC Video Pipeline"
+  short_description: "End-to-end AI UGC ad production workflow"
+  default_prompt: "Use $ai-ugc-video-pipeline to turn this ad brief into a chunked AI UGC video production plan."

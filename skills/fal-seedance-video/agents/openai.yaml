@@ -1,0 +1,4 @@
+interface:
+  display_name: "fal Seedance Video"
+  short_description: "Generate Seedance videos through fal.ai"
+  default_prompt: "Use $fal-seedance-video to generate TikTok-ready Seedance clips from these scene prompts."

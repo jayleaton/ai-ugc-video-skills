@@ -1,0 +1,63 @@
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Dependencies and package manager state
+node_modules/
+.pnpm-store/
+
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/
+
+# Generated creator/product/video assets
+assets/
+asset/
+generated/
+outputs/
+renders/
+downloads/
+tmp/
+temp/
+
+# Video files
+*.mp4
+*.mov
+*.m4v
+*.avi
+*.mkv
+*.webm
+
+# Audio files
+*.mp3
+*.wav
+*.aac
+*.m4a
+*.flac
+
+# Image/reference assets
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.heic
+*.avif
+*.tif
+*.tiff
+
+# Large creative/project exports
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+*.psd
+*.ai
+*.sketch
+*.fig
+*.prproj
+*.drp
+*.dra

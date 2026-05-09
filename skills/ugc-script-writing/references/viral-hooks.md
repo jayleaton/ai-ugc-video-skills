@@ -1,0 +1,106 @@
+# Viral Hook Library
+
+Use at least one of these hooks for every UGC script. Adapt the blank to the product, problem, category, or viewer goal. Name the selected hook template in the output so downstream video prompts can preserve the angle.
+
+## Hooks
+
+- The real story of how I started \_\_\_
+- One thing I'll never do again in \_\_\_
+- What failing at \_\_\_ taught me
+- Nobody really talks about this part of \_\_\_
+- I found this out by accident while doing \_\_\_
+- What I'd do differently if I started \_\_\_ today
+- The easiest way to begin \_\_\_
+- How I finally stayed consistent with \_\_\_
+- Why your \_\_\_ isn't working and how to fix it
+- I wish I did this sooner with \_\_\_
+- The simplest thing that helped me grow in \_\_\_
+- The worst advice I ever got about \_\_\_
+- One mindset change that flipped everything in \_\_\_
+- You don't need to be perfect to start \_\_\_
+- A lazy but effective way to improve at \_\_\_
+- I tested \_\_\_ so you don't have to
+- What nobody warns you about with \_\_\_
+- The fastest way I improved at \_\_\_
+- I didn't expect this to work but it did \_\_\_
+- This one thing changed everything for me in \_\_\_
+- Why \_\_\_ works when nothing else does
+- Watch this before you try \_\_\_
+- Why does no one mention this about \_\_\_
+- Don't make this mistake with \_\_\_
+- You've probably never seen \_\_\_ done like this
+- Stop wasting time doing \_\_\_ this way
+- What happened after I tried \_\_\_ for 30 days
+- Want to save money on \_\_\_ Try this
+- I wish someone told me this before I started \_\_\_
+- Three mistakes keeping you stuck in \_\_\_
+- How I turned a failure in \_\_\_ into progress
+- The difference between beginners and experts in \_\_\_
+- I spent money on \_\_\_ so you don't have to
+- What my first year of \_\_\_ taught me
+- Nobody prepares you for this part of \_\_\_
+- The truth behind overnight success in \_\_\_
+- What I'd tell myself before starting \_\_\_
+- How I stopped being scared to fail at \_\_\_
+- The unexpected upside of doing \_\_\_
+- What happens when you stop overthinking \_\_\_
+- How I got my first real win in \_\_\_
+- One small habit that made a big difference in \_\_\_
+- Why people quit \_\_\_ too early
+- How to stay motivated when \_\_\_ feels hard
+- Why most people never succeed at \_\_\_
+- The easiest way to stay consistent with \_\_\_
+- The honest truth about \_\_\_ no one likes
+- How I stopped overcomplicating \_\_\_
+- The biggest myth about \_\_\_
+- The system I use every time for \_\_\_
+- You're probably doing \_\_\_ wrong
+- How I simplified my whole process for \_\_\_
+- The real story behind my \_\_\_ journey
+- I wish someone said this when I started \_\_\_
+- The most underrated tool I use for \_\_\_
+- How to get better results in \_\_\_ without burnout
+- Three non negotiables that keep me on track with \_\_\_
+- Lessons I learned the hard way from \_\_\_
+- The advice I ignored that changed my \_\_\_
+- What nobody admits about \_\_\_
+- My daily routine that helps with \_\_\_
+- The most overlooked skill you need for \_\_\_
+- Why consistency beats motivation in \_\_\_
+- How I stopped comparing myself in \_\_\_
+- When \_\_\_ finally clicked for me
+- An unpopular opinion about \_\_\_
+- The best advice I've heard about \_\_\_
+- How to enjoy the process of \_\_\_
+- Why most tips about \_\_\_ don't work
+- What's actually holding you back in \_\_\_
+- The habit that transformed my \_\_\_ progress
+- How to tell if you're improving at \_\_\_
+- Why I stopped doing \_\_\_ even though it worked
+- A beginner friendly way to start \_\_\_
+- Three daily actions that improved my \_\_\_
+- The biggest mistake I made starting \_\_\_
+- What happens if you do \_\_\_ every day for a month
+- I tested every method for \_\_\_ here's what worked
+- What people misunderstand about \_\_\_
+- The secret nobody shares about \_\_\_
+- The truth behind my fast growth in \_\_\_
+- Why you don't need fancy tools for \_\_\_
+- My honest thoughts after months of \_\_\_
+- I quit \_\_\_ for 30 days here's what happened
+- The most common misconception about \_\_\_
+- Why starting \_\_\_ now is worth it
+- How to avoid burnout while doing \_\_\_
+- Why you don't need to be an expert to begin \_\_\_
+- The simple framework I follow for \_\_\_
+- How I manage my time while doing \_\_\_
+- This underrated habit boosted my \_\_\_ results
+- I followed popular \_\_\_ advice for a week
+- What finally helped me stay consistent with \_\_\_
+- Unexpected lessons I learned from \_\_\_
+- How to build discipline when \_\_\_ feels impossible
+- Why I stopped listening to gurus about \_\_\_
+- What I do when motivation drops with \_\_\_
+- The myth that's holding you back from \_\_\_
+- What no one tells you about succeeding in \_\_\_
+- I tested all the hacks for \_\_\_ here's the truth
