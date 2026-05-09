@@ -64,7 +64,7 @@ node generate_fal_video_clip.mjs --prompt-file prompt.txt --image image.png [opt
 
 Options:
   --provider        seedance-2 | kling-o3-standard | minimax-video-01
-                    Default: seedance-2
+                    Default: kling-o3-standard
   --endpoint        Override fal endpoint id.
   --image           Local start image path for image-to-video.
   --image-url       Public start image URL for image-to-video.
@@ -89,7 +89,8 @@ if (args.has("help") || !args.has("prompt-file")) {
   process.exit(args.has("help") ? 0 : 1);
 }
 
-const providerName = args.get("provider") ?? "seedance-2";
+const providerName =
+  args.get("provider") ?? process.env.UGC_FAL_VIDEO_PROVIDER ?? "kling-o3-standard";
 const provider = PROVIDERS[providerName];
 
 if (!provider && !args.has("endpoint")) {

@@ -1,4 +1,4 @@
 interface:
-  display_name: "fal Seedance Video"
-  short_description: "Generate Seedance videos through fal.ai"
-  default_prompt: "Use $fal-seedance-video to generate TikTok-ready Seedance clips from these scene prompts."
+  display_name: "fal Video Generation"
+  short_description: "Generate UGC video clips through fal.ai"
+  default_prompt: "Use $fal-seedance-video to generate TikTok-ready clips from these scene prompts. Default to Kling O3 Standard, and use Seedance 2.0 as the quality baseline when needed."

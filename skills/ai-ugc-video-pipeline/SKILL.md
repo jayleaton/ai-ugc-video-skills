@@ -1,6 +1,6 @@
 ---
 name: ai-ugc-video-pipeline
-description: End-to-end AI UGC ad production workflow for realistic AI creator videos. Use when a user wants Codex to turn a short ad brief into UGC video assets, coordinate UGC script writing, prepare creator/product references, create chunked scene prompts, set Seedance/fal generation settings, review clip failures, plan regenerations, and assemble TikTok/Reels/Shorts-ready ads.
+description: End-to-end AI UGC ad production workflow for realistic AI creator videos. Use when a user wants Codex to turn a short ad brief into UGC video assets, coordinate UGC script writing, prepare creator/product references, create chunked scene prompts, set fal video generation settings, review clip failures, plan regenerations, and assemble TikTok/Reels/Shorts-ready ads.
 ---
 
 # AI UGC Video Pipeline
@@ -18,7 +18,7 @@ Collect only what is missing:
 - Creator persona or reference package. For AutoVisuals, prefer `@imagen/ugc-influencers` and `marcHalePersona`.
 - Product/app image assets or screenshots.
 - Desired aspect ratio, usually `9:16`.
-- Video generator target: default to fal Seedance if available.
+- Video generator target: default to fal Kling O3 Standard for cost-effective tests when available, with Seedance 2.0 as the higher-cost quality baseline.
 
 If the user gives a brief and the repo already has persona/product assets, proceed using those assets.
 
@@ -52,7 +52,8 @@ If the user gives a brief and the repo already has persona/product assets, proce
    - Replace only the chunk voiceover, framing, runtime, and asset-inclusion line.
    - Keep each clip independently regenerable.
 6. Generate clips with `$fal-seedance-video`.
-   - Default for TikTok/Reels: `aspect_ratio: "9:16"`, `resolution: "720p"`.
+   - Default provider for TikTok/Reels tests: Kling O3 Standard image-to-video with audio on.
+   - Seedance fallback/baseline: `aspect_ratio: "9:16"`, `resolution: "720p"`.
    - Prefer short 5-6s chunks unless the line needs more space.
    - Use 10-12s only for longer mechanism or payoff chunks.
 7. Review each clip.

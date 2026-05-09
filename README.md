@@ -1,6 +1,6 @@
 # AI UGC Video Skills
 
-Reusable Codex skills and docs for producing realistic AI UGC ads with script writing, scene chunking, and fal.ai Seedance generation.
+Reusable Codex skills and docs for producing realistic AI UGC ads with script writing, scene chunking, and fal.ai video generation.
 
 This repo is intentionally documentation-first. It does not commit generated creator assets, product images, MP4 outputs, audio files, or editor exports. Clone it fresh, add your own `.env`, references, and outputs locally, then keep the reusable skill logic in git.
 
@@ -8,7 +8,7 @@ This repo is intentionally documentation-first. It does not commit generated cre
 
 - [`ai-ugc-video-pipeline`](skills/ai-ugc-video-pipeline/README.md): end-to-end workflow for turning an ad brief into a chunked AI UGC production plan.
 - [`ugc-script-writing`](skills/ugc-script-writing/README.md): script frameworks, viral hooks, chunking rules, captions, and review checks.
-- [`fal-seedance-video`](skills/fal-seedance-video/README.md): fal.ai Seedance defaults, payload guidance, local helper script, and generation failure handling.
+- [`fal-seedance-video`](skills/fal-seedance-video/README.md): fal.ai video model defaults, Kling/Seedance payload guidance, local helper script, and generation failure handling.
 
 ## Tools
 
@@ -27,7 +27,7 @@ This repo is intentionally documentation-first. It does not commit generated cre
 2. Store creator notes in `content-creators/`, while keeping generated images and videos local to your active project.
 3. Use `ugc-script-writing` to choose a viral hook, write the voiceover, and split the ad into chunks.
 4. Use `ai-ugc-video-pipeline` to package the creator lock, universal direction block, scene prompts, and review plan.
-5. Use `fal-seedance-video` to generate each chunk separately at `9:16`, `720p`.
+5. Use `fal-seedance-video` to generate each chunk separately. Default to Kling O3 Standard for cost-effective tests, then fall back to Seedance 2.0 when you need the higher-cost quality baseline.
 6. Review clips one by one, regenerate weak scenes only, then assemble in your editor.
 
 ## Repository Policy

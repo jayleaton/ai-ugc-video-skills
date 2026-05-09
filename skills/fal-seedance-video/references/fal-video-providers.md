@@ -2,12 +2,12 @@
 
 Use this reference when comparing fal.ai video models for AI UGC clips.
 
-## Recommended Test Candidate
+## Default Provider
 
 ### Kling O3 Standard Image-to-Video
 
 - Endpoint: `fal-ai/kling-video/o3/standard/image-to-video`
-- Best use: lower-cost image-to-video UGC scene tests with optional native audio
+- Best use: default lower-cost image-to-video UGC scene tests with optional native audio
 - Supports: start image, optional end image, prompt, 3-15 second duration, generated audio
 - Default test settings:
   - Aspect ratio: controlled by source image framing
@@ -57,8 +57,9 @@ Use this reference when comparing fal.ai video models for AI UGC clips.
 
 For the AutoVisuals wheels/wraps comparison, test this order:
 
-1. Kling O3 Standard with audio on.
+1. Kling O3 Standard with audio on as the default.
 2. Kling O3 Standard with audio off plus external voiceover, if native speech is poor.
-3. MiniMax Video 01 for low-cost visual-only motion comparison.
+3. Seedance 2.0 when Kling quality is not good enough.
+4. MiniMax Video 01 for low-cost visual-only motion comparison.
 
 Keep Seedance 2.0 as the quality baseline, not the default iteration model.

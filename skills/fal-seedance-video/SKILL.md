@@ -1,35 +1,36 @@
 ---
 name: fal-seedance-video
-description: Implement and operate fal.ai video generation for AI UGC clips, with Seedance as the quality baseline and cheaper provider tests such as Kling O3 Standard. Use when generating or coding TikTok/Reels/Shorts videos with fal video models, choosing endpoints, setting aspect ratio/resolution/duration, uploading image references, submitting queue jobs, polling results, handling webhooks, or producing fal request payloads for AI UGC scene clips.
+description: Implement and operate fal.ai video generation for AI UGC clips, with Kling O3 Standard as the default cost-effective model and Seedance 2.0 as the higher-cost quality baseline. Use when generating or coding TikTok/Reels/Shorts videos with fal video models, choosing endpoints, setting aspect ratio/resolution/duration, uploading image references, submitting queue jobs, polling results, handling webhooks, or producing fal request payloads for AI UGC scene clips.
 ---
 
 # fal Video Generation
 
-Use this skill when Codex needs to generate or implement video clips with fal.ai video models. Seedance remains the quality baseline, but cheaper candidates should be tested for iteration workflows.
+Use this skill when Codex needs to generate or implement video clips with fal.ai video models. Default to Kling O3 Standard for cost-effective UGC tests, and use Seedance 2.0 when you need the higher-cost quality baseline.
 
 Read `references/fal-seedance.md` when you need Seedance endpoint IDs, parameters, payload examples, or cost/resolution guidance. Read `references/fal-video-providers.md` when comparing Seedance against cheaper fal providers.
 
 ## Defaults for UGC ads
 
-- Endpoint: image-to-video when a creator/avatar/reference image exists.
-- Aspect ratio: `9:16` for TikTok, Reels, and Shorts.
-- Resolution: `720p` for cost-effective ad iteration.
+- Default provider: Kling O3 Standard image-to-video.
+- Quality baseline provider: Seedance 2.0 image-to-video.
+- Aspect ratio: use vertical `9:16` source images for Kling; set `aspect_ratio: "9:16"` for Seedance.
+- Resolution: set `720p` for Seedance to control cost; Kling O3 Standard does not expose the same resolution field.
 - Duration: `5` or `6` seconds for most UGC chunks; `10`, `11`, or `12` seconds for longer mechanism/payoff chunks when supported.
 - Safety checker: leave enabled.
 - Camera: keep subtle and realistic; avoid aggressive cinematic movement for talking-head UGC.
 
 ## Provider candidates
 
-- Quality baseline: `bytedance/seedance-2.0/image-to-video`
-- Cheaper first test: `fal-ai/kling-video/o3/standard/image-to-video`
+- Default cost-effective model: `fal-ai/kling-video/o3/standard/image-to-video`
+- Higher-cost quality baseline: `bytedance/seedance-2.0/image-to-video`
 - Low-cost visual-only exploration: `fal-ai/minimax/video-01/image-to-video`
 
 ## Workflow
 
 1. Confirm an API key is available before running generation. For AutoVisuals UGC work, use `UGC_FAL_API_KEY` so creator/ad generation does not share app provider keys. For general projects, `FAL_KEY` or `FAL_API_KEY` are also supported.
 2. Choose endpoint:
-   - `bytedance/seedance-2.0/image-to-video` for UGC clips from persona/reference images with generated synchronized audio.
-   - `fal-ai/kling-video/o3/standard/image-to-video` for lower-cost image-to-video UGC tests with optional generated audio.
+   - `fal-ai/kling-video/o3/standard/image-to-video` for default lower-cost image-to-video UGC tests with generated audio.
+   - `bytedance/seedance-2.0/image-to-video` for higher-cost UGC clips from persona/reference images with generated synchronized audio.
    - `fal-ai/minimax/video-01/image-to-video` for cheap visual motion tests where native dialogue is not the focus.
    - `fal-ai/bytedance/seedance/v1/pro/fast/image-to-video` for older visual-only or legacy workflows.
    - `fal-ai/bytedance/seedance/v1/lite/image-to-video` for cheaper fast prototypes.

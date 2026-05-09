@@ -1,11 +1,11 @@
 # fal Video Generation
 
-Generation skill for creating short-form AI video clips through fal.ai video models. Seedance is the quality baseline; Kling O3 Standard is the first cheaper candidate to test.
+Generation skill for creating short-form AI video clips through fal.ai video models. Kling O3 Standard is the default cost-effective model; Seedance 2.0 is the higher-cost quality baseline.
 
 ## What It Does
 
 - Chooses the correct fal video endpoint for image-to-video or text-to-video generation.
-- Keeps short-form ad defaults cost-conscious: `9:16`, `720p`, short chunk durations.
+- Keeps short-form ad defaults cost-conscious: Kling O3 Standard first, vertical source images, short chunk durations, and Seedance at `9:16`/`720p` when used.
 - Stores request IDs, prompts, input settings, output URLs, and metadata.
 - Provides regeneration guidance for pacing, voice drift, face drift, bad hands, and unwanted product appearances.
 - Includes helper scripts for one-off local generation and provider comparison.
